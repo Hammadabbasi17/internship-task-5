@@ -1,0 +1,147 @@
+
+ :root {
+        --primary-color: #2563eb;
+        --secondary-color: #0d1b2a;
+        --grey-color:#64748b;
+    }
+
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    margin-top: 120px;
+}
+.services h3{
+    color: var(--grey-color);
+}
+
+.cont{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicessec {
+    width: 90%;
+    height: auto;
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.cardone {
+     /* width: 380px; */
+     height: 500px; 
+
+   padding: 40px 40px;
+ 
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    
+ 
+
+}
+.icon{
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: var(--primary-color);
+    background-color: #a4ddf3;
+}
+.ri-check-fill{
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+
+.cardone:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--primary-color);
+}
+
+
+
+.cardtwo {
+    /* width: 380px; */
+    height: 500px;
+
+
+   padding: 40px 40px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  
+}
+
+.cardtwo:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--primary-color);
+}
+
+
+
+.cardthree {
+    /* width: 380px; */
+    height: 500px;
+   
+    
+ padding: 40px 40px;
+    
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+
+}
+
+.cardthree:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--primary-color);
+}
+
+
+
+.btn2 {
+
+    padding: 10px 15px;
+    background-color: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn2:hover {
+    background-color: #2563eb;
+}
+
+
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .servicessec{
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

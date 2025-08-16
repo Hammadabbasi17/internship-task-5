@@ -1,0 +1,45 @@
+.about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+   
+    gap: 30px;
+    width: 100%;
+    padding: 40px 40px;
+    margin-top: 120px;
+}
+
+.textabout{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    margin-top: 120px;
+
+}
+.textabout h3{
+    color: var(--grey-color);
+}
+
+.teamimg img{
+    width: 500px;
+}
+@media (max-width:920px) {
+    .about{
+        width: 100%;
+        flex-direction: column;
+    
+    }
+    
+
+    
+}
+@media (max-width:600px) {
+    .teamimg img{
+        width: 320px;
+    }
+    
+}
