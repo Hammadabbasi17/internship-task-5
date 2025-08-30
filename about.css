@@ -1,45 +1,143 @@
-.about{
+.about {
     display: flex;
     justify-content: space-around;
     align-items: center;
 
-   
     gap: 30px;
-    width: 100%;
-    padding: 40px 40px;
-    margin-top: 120px;
+
+  
+
+    margin: auto;
+    padding-top: 200px;
 }
 
-.textabout{
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #0d1b2a;
+    --grey-color: #64748b;
+}
+
+.textabout {
     display: flex;
-    justify-content: start;
-    align-items: center;
+    justify-content: space-between;
+    
+
     flex-direction: column;
     gap: 30px;
-    text-align: center;
-    margin-top: 120px;
+/* 
+    margin-top: 120px; */
 
 }
-.textabout h3{
+
+.textabout h1 {
+    padding-top: 20px;
+    font-size: 50px;
+}
+
+.textabout h3 {
     color: var(--grey-color);
 }
 
-.teamimg img{
+.teamimg img {
     width: 500px;
 }
-@media (max-width:920px) {
-    .about{
-        width: 100%;
-        flex-direction: column;
+
+.aboutbox {
+ display: flex;
+ gap: 10px;
+  padding: 10px;
+    height: 200px;
+   
+}
+.aboutbox i{
+    font-size: 45px;
+    color: var(--primary-color);
+  
     
+}
+.aboutbutton {
+    display: flex;
+    gap: 10px;
+
+}
+.anouttext{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.btn1 {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    /* background-color: #2563eb; */
+    /* blue-600 */
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn1:hover {
+    background-color: var(--primary-color);
+    /* blue-700 */
+}
+.btn2{
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    /* background-color: #2563eb; */
+    /* blue-600 */
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn2:hover {
+    background-color: var(--primary-color);
+    color: white;
+    /* blue-700 */
+}
+.aboutboxcontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+
+}
+
+@media (max-width:1024px) {
+    .about {
+        width: 100%;
+        flex-direction: column-reverse;
+        padding: 10px;
+
     }
     
 
-    
+
+
 }
+
 @media (max-width:600px) {
-    .teamimg img{
+    .teamimg img {
         width: 320px;
     }
-    
+    .textabout h1 {
+   
+    font-size: 40px;
+}
+
+}
+
+@media (min-width:1200px) {
+    .about {
+        max-width: 1200px;
+    }
+
 }

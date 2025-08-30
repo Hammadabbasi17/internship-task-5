@@ -1,0 +1,71 @@
+:root{
+    --primary-color: #2563eb;
+    --secondary-color: #0d1b2a;
+    --grey-color: #64748b;
+
+}
+
+.testimonial-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-content: center;
+    margin: auto;
+    max-width: 1200px;
+    gap: 25px;
+    padding: 20px;
+}
+
+.reviewsbox {
+    height: 345px;
+    background-color:#F2FAFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.user-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-rating i {
+    font-size: 20px;
+    color: #FDDC57;
+
+}
+
+.reviewsbox h3 {
+    color: var(--small-text-color);
+    font-family: var(--text-font);
+}
+
+.reviewsbox h4 {
+    color: var(--text-clr)
+}
+
+.ri-double-quotes-l {
+    font-size: 35px;
+    color: var(--primary-color);
+}
+
+
+#scrollTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: none;
+
+}
